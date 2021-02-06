@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  width: 50%;
+  width: 40%;
   margin: 1em auto;
   border: 1px solid lightgray;
   border-radius: 30px;
@@ -51,16 +51,20 @@ form {
   margin-left: 1em;
 }
 
-form > button {
-  padding: 0.5em 2em;
+select {
+  text-decoration: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -ms-appearance: none;
   border-radius: 5px;
-  border: 0px;
-  background-color: mediumslateblue;
-  color: white;
+  border: 1px solid lightgray !important;
+  padding: 0.25em 1.5em;
+  color: rgb(80, 80, 80);
+  width: 153px;
 }
 
-input,
-select {
+input {
   display: block;
   border-radius: 5px;
   border: 1px solid lightgray;
@@ -68,4 +72,13 @@ select {
   height: 15px;
   margin: 0.5em 0px;
   color: rgb(80, 80, 80);
+}
+
+#submitButton {
+  height: 25px;
+  background-color: #6d73a7;
+  padding: 0.25em 2em;
+  border-radius: 5px;
+  border: 0px;
+  color: white;
 }

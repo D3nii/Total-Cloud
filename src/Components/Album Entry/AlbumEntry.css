@@ -6,13 +6,12 @@
 #imageContainer,
 #rightContainer {
   display: inline-block;
-  /* width: 49%; */
   text-align: left;
   padding: 0.5em;
 }
 
 #rightContainer {
-  width: 50%;
+  width: 70%;
 }
 
 #submittedByImage {
