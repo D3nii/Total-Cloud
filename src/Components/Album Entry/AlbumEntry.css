@@ -1,0 +1,22 @@
+#rightContainer > div > button {
+  border: 0px;
+  background-color: transparent;
+}
+
+#imageContainer,
+#rightContainer {
+  display: inline-block;
+  /* width: 49%; */
+  text-align: left;
+  padding: 0.5em;
+}
+
+#rightContainer {
+  width: 50%;
+}
+
+#submittedByImage {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
