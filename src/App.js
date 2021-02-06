@@ -98,6 +98,12 @@ function App() {
     forceUpdate();
   };
 
+  var remove = (AlbumName) => {
+    setData(data.filter((dict) => dict.albumName != AlbumName));
+
+    forceUpdate();
+  };
+
   return (
     <div className="App">
       <h2 style={{ marginBottom: "0px" }}>Popular Metal Albums</h2>
@@ -112,7 +118,7 @@ function App() {
             albumURL={element.albumURL}
             date={element.date}
             submittedSrc={submittersOb[element.submittedSrc]}
-            updateVotes={{ increment }}
+            updateVotes={{ increment, remove }}
           />
         );
       })}

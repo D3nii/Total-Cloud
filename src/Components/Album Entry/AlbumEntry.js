@@ -25,6 +25,14 @@ class AlbumEntry extends React.Component {
             </button>
             {/* Counter */}
             <h2 style={{ display: "inline-block" }}>{this.props.votes}</h2>
+
+            <button
+              onClick={() =>
+                this.props.updateVotes.remove(this.props.albumName)
+              }
+            >
+              <GoTriangleUp style={{ transform: "rotate(180deg)" }} />
+            </button>
           </div>
 
           <a style={{ color: "darkcyan" }}>{this.props.albumName}</a>
