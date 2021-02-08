@@ -17,9 +17,7 @@ class AlbumEntry extends React.Component {
           <div>
             {/* Button will use a function from the props */}
             <button
-              onClick={() =>
-                this.props.updateVotes.increment(this.props.albumName)
-              }
+              onClick={() => this.props.updateVotes[0](this.props.albumName)}
             >
               <GoTriangleUp />
             </button>
@@ -27,9 +25,7 @@ class AlbumEntry extends React.Component {
             <h2 style={{ display: "inline-block" }}>{this.props.votes}</h2>
 
             <button
-              onClick={() =>
-                this.props.updateVotes.remove(this.props.albumName)
-              }
+              onClick={() => this.props.updateVotes[1](this.props.albumName)}
             >
               <GoTriangleUp style={{ transform: "rotate(180deg)" }} />
             </button>
